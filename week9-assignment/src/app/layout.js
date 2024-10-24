@@ -3,7 +3,7 @@ import "./globals.css";
 //import our clerk provider
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/Header";
-import { dark, neobrutalism, shadesOfPurple } from "@clerk/themes";
+import { dark } from "@clerk/themes";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
