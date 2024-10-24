@@ -12,12 +12,12 @@ export default async function UserPage() {
   return (
     <>
       <h1>User Page</h1>
-      <h2>
-        {/* we can use optional chaining incase the user does not provide all the data we want to render */}
-        Welcome, {user?.firstName}
-        {user?.lastName}
-      </h2>
-      <p>{user?.emailAddresses[0].emailAddresses}</p>
+      {/* <h2> */}
+      {/* we can use optional chaining incase the user does not provide all the data we want to render */}
+      {/* Welcome, {user?.firstName} */}
+      {/* {user?.lastName} */}
+      {/* </h2> */}
+      {/* <p>{user?.emailAddresses[0].emailAddresses}</p> */}
     </>
   );
 }
