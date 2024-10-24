@@ -10,7 +10,7 @@ export default async function UserPage() {
   const user = await currentUser();
   //you can console.log user to see what it looks like inside
   return (
-    <>
+    <div>
       <h1>User Page</h1>
       {/* <h2> */}
       {/* we can use optional chaining incase the user does not provide all the data we want to render */}
@@ -18,6 +18,6 @@ export default async function UserPage() {
       {/* {user?.lastName} */}
       {/* </h2> */}
       {/* <p>{user?.emailAddresses[0].emailAddresses}</p> */}
-    </>
+    </div>
   );
 }

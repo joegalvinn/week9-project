@@ -7,8 +7,8 @@
 //a suggestion: you could have a try and catch for your sql query
 export default function createProfilePage() {
   return (
-    <>
+    <div>
       <h1>Create Profile Page</h1>
-    </>
+    </div>
   );
 }
