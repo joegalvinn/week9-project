@@ -1,3 +1,4 @@
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 //set up your middleware using clerks template
 //you don't need to wrte the template youself you only write the logic to make soem routes protected and some public
 const isProtectedRoutes = createRouteMatcher([
