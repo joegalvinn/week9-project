@@ -18,3 +18,5 @@
 - remember to add a component from radix or another library
 
 # 5 - deploy to Vercel
+
+- test
