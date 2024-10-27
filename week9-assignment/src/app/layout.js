@@ -1,8 +1,16 @@
 import localFont from "next/font/local";
 import "./globals.css";
 //import our clerk provider
-import { ClerkProvider } from "@clerk/nextjs";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  UserButton,
+  SignedOut,
+} from "@clerk/nextjs";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import PostForm from "@/components/PostFormClient";
 import { dark } from "@clerk/themes";
 
 const geistSans = localFont({
@@ -34,6 +42,10 @@ export default function RootLayout({ children }) {
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <Header />
+          <SignedIn>
+            <PostForm />
+          </SignedIn>
+          <Footer />
           {children}
         </body>
       </html>

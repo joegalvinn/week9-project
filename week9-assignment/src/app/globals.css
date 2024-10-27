@@ -1,21 +1,186 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  max-width: 80vw;
+  margin: auto;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.formContainer {
+  max-width: 390px;
+  margin: auto;
+  margin-top: 5vw;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-spacing {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0073e6;
+  outline: none;
+}
+
+.submit {
+  background-color: rgba(38, 201, 252, 1);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.submit:hover {
+  background-color: #005bb5;
+}
+
+.returnLakeposts {
+  margin-top: 20px;
+}
+
+.flex {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  padding: 10px;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.flex:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+  font-weight: bold;
+  color: rgba(38, 201, 252, 1);
+  margin-bottom: 5px;
+}
+
+.post {
+  font-size: 16px;
+  color: #555;
+}
+
+.review-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.editButton {
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  left: 110px;
+  background-color: rgba(38, 201, 252, 1);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.editButton:hover {
+  background-color: rgb(4, 164, 212);
+}
+
+.signOut {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(38, 201, 252, 1);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.signOut:hover {
+  background-color: rgb(4, 164, 212);
+}
+
+.createButton {
+  background-color: rgba(38, 201, 252, 1);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.createButton:hover {
+  background-color: rgb(4, 164, 212);
+}
+
+.trigger-button {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.trigger-button:hover {
+  background-color: rgb(4, 164, 212);
+}
+
+@media (max-width: 390px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .post {
+    font-size: 14px;
+  }
 }

@@ -2,8 +2,9 @@ import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 //set up your middleware using clerks template
 //you don't need to wrte the template youself you only write the logic to make soem routes protected and some public
 const isProtectedRoutes = createRouteMatcher([
-  "/posts(.*)",
+  "/feed(.*)",
   "/createProfile(.*)",
+  "/user(.*)",
 ]);
 
 //we are going to use clerkMiddleware to put together the matches and the matcher
@@ -13,10 +14,6 @@ export default clerkMiddleware(async (auth, req) => {
 });
 
 export const config = {
-  //the matcher will find matches for public and private routes
-  //if the match is for a public route, middleware does not trigger
-  //if the match is for a private route middleware will trigger with authentication
-  //the matcher uses regex to find matches
   matcher: [
     // Skip Next.js internals and all static files, unless found in search params
     "/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",

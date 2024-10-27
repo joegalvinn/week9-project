@@ -1,0 +1,23 @@
+.fixed-footer {
+  position: fixed; /* Fix the footer */
+  bottom: 0; /* Position it at the bottom */
+  left: 0; /* Align to left */
+  right: 0; /* Align to right */
+  background-color: white; /* Background color */
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px 0; /* Padding for spacing */
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-around; /* Space around the items */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.fixed-footer a {
+  color: #0073e6; /* Link color */
+  font-weight: bold; /* Bold text for links */
+  text-decoration: none; /* Remove underline */
+  padding: 5px 10px; /* Padding for better touch targets */
+}
+
+.fixed-footer a:hover {
+  text-decoration: underline; /* Underline on hover for better UX */
+}

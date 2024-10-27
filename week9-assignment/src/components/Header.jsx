@@ -5,6 +5,7 @@ import {
   SignUpButton,
   SignedIn,
   SignedOut,
+  SignOutButton,
 } from "@clerk/nextjs";
 //all of these components work in the server
 
@@ -20,12 +21,16 @@ export default function Header() {
     <>
       {/* we only want to show the user when the user is signed in */}
       <SignedIn>
-        <UserButton />
+        <SignOutButton className="signOut">Sign Out</SignOutButton>
       </SignedIn>
       {/* we only want to show the signin and signout button when the user is signed out */}
       <SignedOut>
-        <SignInButton mode="modal">Sign In</SignInButton>
-        <SignUpButton mode="modal">Sign Up</SignUpButton>
+        <SignUpButton
+          className="signOut" //copying the other class for style
+          mode="modal"
+        >
+          Sign Up
+        </SignUpButton>
       </SignedOut>
     </>
   );
