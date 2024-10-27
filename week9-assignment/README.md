@@ -21,6 +21,6 @@
 
 Self Review
 
-I felt very overwhelmed coming into this project, i got very lost several times and lost site of what I was actually trying to do and going down rabbit holes. It's not as polished as I would have liked but im happy that it seems to be working. With the exception of the redirects after the create profile and update profile forms. Im not sure how to make these work so some help would be appreciated. Oh and my tailwind stopped working? I'm not sure if this is because of the update.
+I felt very overwhelmed coming into this project, i got very lost several times and lost site of what I was actually trying to do and going down rabbit holes. It's not as polished as I would have liked but im happy that it seems to be working. With the exception of the redirects after the create profile and update profile forms. Im not sure how to make these work so some help would be appreciated. Oh and my tailwind stopped working? I'm not sure if this is because of the update.(writing this i've realised i may have deleted the import on the layout page?) Unfortunatly I spent way too many hours trying to figure out the redirect issue and on saturday I had to go to peterborough and had dialating eye drops put in that meant i couldn't look at screens for a while so i've had no time to work on the stretch goals.
 
 I found that taking a step back and just working page by page seemed to help. I am enjoying that a lot of things are just repeating from other projects even if they aren't the same site idea they still have lots of similar elements.
